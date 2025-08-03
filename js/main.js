@@ -3,7 +3,7 @@
    const navNumbers = document.querySelectorAll('.nav-number');
         const heroSwiper = new Swiper('.hero-swiper', {
         autoplay: {
-            delay: 5000,
+            delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true
         },
