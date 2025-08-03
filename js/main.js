@@ -1,4 +1,6 @@
-    const navNumbers = document.querySelectorAll('.nav-number');
+ 
+
+   const navNumbers = document.querySelectorAll('.nav-number');
         const heroSwiper = new Swiper('.hero-swiper', {
         autoplay: {
             delay: 5000,
@@ -158,7 +160,15 @@
     });
 
 
- AOS.init({
-    duration: 1000,   
-    once: false,     
-  });
+window.addEventListener('load', function () {
+  setTimeout(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+
+    document.body.classList.add('loaded');
+
+    window.scrollTo(0, 0);
+  }, 100); 
+});
