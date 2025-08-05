@@ -517,8 +517,8 @@ body:not(.loaded) {
 .service-card:hover .card-body {
     margin-top: 20px;
 }
-.card-body h5{
-      color: #07531f;
+.service-card .card-body h5{
+      color: #07531f !important;
 
 }
 .line {
